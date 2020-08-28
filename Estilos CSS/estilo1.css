@@ -1,0 +1,72 @@
+  
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-image: url("https://webartdevelopers.com/blog/wp-content/uploads/2019/02/Sliding-Diagonals-Background-Effect-HTML-CSS.gif");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    color: white;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: orangered;
+    text-align: center;
+}
+
+h1:hover{
+    color: blue;
+    transition: all 0.3s ease;
+}
+
+h2{
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: left;
+    background-color: tomato;
+}
+
+p{
+    text-align:center;
+    color:white;
+    
+}
+
+p:hover{
+    color: red
+}
+
+#parrafo_especial{
+    color:black
+}
+
+.texto_derecha{
+    max-width: 80%;
+    float: left;
+}
+
+.titulo_izquierda{
+    max-width: 20%;
+    float: left;
+}
+
+a:link { color: blue; }
+a:visited { color: green; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding: 10px;
+}
+  
+.grid-item {
+    border: 1px solid white;
+    padding: 20px;
+}
+
+#bloque_final{
+    background-color: tomato;
+}

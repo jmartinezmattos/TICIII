@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="estilo1.css">
     <title>Curso HTML</title>
 </head>
 <body>
     <h1>Curso HTML</h1>
     
     <h1>1. Introduccion</h1>
-    
-    <h2>1.1 ¿Qué es HTML?</h2>
-    
+
+<div class="grid-container">
+    <h2 class="grid-item">1.1 ¿Qué es HTML?</h2>
+    <div class="grid-item">
         <p>Definiéndolo de forma sencilla, <b>"HTML es el lenguaje que se utiliza para crear las páginas web a las que se accede mediante internet".</b>Más concretamente, HTML es el lenguaje con el que se "escriben" la mayoría de páginas web.</p>
 
         <p>Los diseñadores utilizan el lenguaje HTML para crear páginas web, los programas que se emplean generan páginas escritas en HTML y los navegadores que utilizamos (por ejemplo Google Chrome, Opera o Mozilla Firefox) muestran las páginas web después de leer e interpretar su contenido HTML.</p>
@@ -20,9 +21,13 @@
         <p>Aunque HTML es un lenguaje que utilizan los ordenadores y los programas de diseño de páginas web, es muy fácil de entender y escribir por parte de las personas. En realidad, HTML son las siglas de <i>HyperText Markup Language</i> y más adelante se verá el significado de cada una de estas palabras. El lenguaje HTML es un estándar reconocido en todo el mundo y cuyas normas define un organismo sin ánimo de lucro llamado <a href="https://www.w3.org/">World Wide Web Consortium</a> , más conocido como <b>W3C</b>. Como se trata de un estándar reconocido por todas las empresas relacionadas con el mundo de internet, una misma página escrita en HTML se visualizará de forma muy similar en cualquier navegador bajo distintos sistemas operativos.</p>
 
         <p>El propio <b>W3C</b> define el lenguaje HTML como "<i>un lenguaje reconocido universalmente y que permite publicar información de forma global</i>". Desde su creación, el lenguaje HTML ha pasado de ser un lenguaje utilizado exclusivamente para crear documentos electrónicos a emplearse en diversas aplicaciones electrónicas especializadas como buscadores, tiendas "en línea" y banca electrónica.</p>
+    </div>
 
-    <h2>1.2 Breve historia de HTML</h2>
+    
 
+<h2 class="grid-item">1.2 Breve historia de HTML</h2>
+
+    <div class="grid-item">
         <p>La historia completa de HTML es algo larga, por lo que se muestra resumida a partir de la información que se puede encontrar en <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>.</p>
 
         <p>El origen de HTML se remonta a 1980, cuando el físico <a href="https://es.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a>, investigador del <a href="http://www.cern.ch/">CERN</a> (Organización Europea para la Investigación Nuclear) propuso un nuevo sistema de “hipertexto” para compartir documentos.</p>
@@ -68,10 +73,13 @@
         <p>De forma paralela a su actividad con HTML, W3C ha continuado con la estandarización de XHTML, una versión avanzada de HTML y basada en XML. La primera versión de XHTML se denomina XHTML 1.0 y se publicó el 26 de Enero de 2000 (y posteriormente se revisó el uno de Agosto de 2002).</p>
 
         <P>XHTML 1.0 es una adaptación de HTML 4.01 al lenguaje XML por lo que mantiene casi todas sus etiquetas y características, pero añade algunas restricciones y elementos propios de XML. La versión XHTML 1.1 ya ha sido publicada en forma de borrador y pretende modularizar.</P>
-    
-    
-    <h2>1.3. HTML y CSS</h2>
+    </div>
 
+
+
+    <h2 class="grid-item">1.3. HTML y CSS</h2>
+
+    <div class="grid-item">
         <p>Originalmente, las páginas HTML sólo incluían información sobre sus contenidos de texto e imágenes. Con el desarrollo del estándar HTML, empezaron a incluir también información sobre el aspecto de sus contenidos: tipos de letra, colores y márgenes.</p>
 
         <p>La posterior aparición de tecnologías como <i>JavaScript</i>, provocaron que las páginas HTML también incluyeran el código de las aplicaciones (scripts) que se utilizan para crear páginas web dinámicas.</p>
@@ -83,85 +91,99 @@
         <p>Otra ventaja de la separación de los contenidos y su presentación es que los documentos XHTML creados son más flexibles, ya que se adaptan mejor a las diferentes plataformas: pantallas de ordenador, pantallas de dispositivos móviles, impresoras y dispositivos utilizados por personas discapacitadas.</p>
         
         <p>De esta forma, utilizando exclusivamente XHTML se crean páginas web "feas" pero correctas. Aplicando CSS, se pueden crear páginas "bonitas" a partir de las páginas XHTML correctas.</p>
-    <h1>2. Caracteristicas basicas</h1>
+    </div>
+</div>
 
-    <h2>2.1 Lenguajes de etiquetas</h2>
-    
-    <code>&#60parrafo&#62 Contenido de texto con 	&#60importante&#62algunas palabras&#60/importante&#62 resaltadas de forma especial. &#60/parrafo&#62;</code>
-    
-    <p>El principio de un párrafo se indica mediante la palabra &#60parrafo&#62 y el final de un párrafo se indica mediante la palabra &#60/parrafo&#62. De la misma manera, para enfatizar ciertas palabras del texto, se encierran entre &#60importante&#62 e &#60/importante&#62. El proceso de indicar las diferentes partes que componen la información se denomina marcar (<i>markup</i> en inglés). Cada una de las palabras que se emplean para marcar el inicio y el final de una sección se denominan etiquetas.</p>
-    
-    <p>Aunque existen algunas excepciones, en general las etiquetas se indican por pares y se forman de la siguiente manera:</p>
-    
-    <p>Etiqueta de apertura: carácter &#60, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter &#62 Etiqueta de cierre: carácter &#60, seguido del carácter /, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter &#62.</p>
+<h1>2. Caracteristicas basicas</h1>
 
-    <p>Así, la estructura típica de las etiquetas HTML es:</p>
+<div class="grid-container">
 
-    <code>&#60nombre_etiqueta> ... &#60/nombre_etiqueta></code>
+    <h2 class="grid-item">2.1 Lenguajes de etiquetas</h2>
     
-    <p>HTML es un lenguaje de etiquetas (también llamado lenguaje de marcas) y las páginas web habituales están formadas por cientos o miles de pares de etiquetas. De hecho, las letras "ML" de la sigla HTML significan <i>markup language</i>, que es como se denominan en inglés a los lenguajes de marcas. Además de HTML, existen muchos otros lenguajes de etiquetas como XML, SGML, DocBook y MathML.</p>
-    
-    <p>La principal ventaja de los lenguajes de etiquetas es que son muy sencillos de leer y escribir por parte de las personas y de los sistemas electrónicos. La principal desventaja es que pueden aumentar mucho el tamaño del documento, por lo que en general se utilizan etiquetas con nombres muy cortos.</p>
-    
-    <h2>2.2. El primer documento HTML</h2>
-    
-    <p>Las páginas HTML se dividen en dos partes: la cabecera y el cuerpo. La cabecera incluye información sobre la propia página, como por ejemplo su título y su idioma, que no se visualiza. El cuerpo de la página incluye todos sus contenidos, como párrafos de texto e imágenes.</p>
-
-    <img src="data:image/png;base64,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">
-    
-    <p>El cuerpo (llamado <i>body</i> en inglés) contiene todo lo que el usuario ve en su pantalla y la cabecera (llamada <i>head</i> en inglés) contiene todo lo que no se ve (con la única excepción del título de la página, que los navegadores muestran como título de sus ventanas).</p>
-    
-    <p>A continuación se muestra el código HTML de una página web muy sencilla:</p>
-
-    <code>
-    <pre>
-    &#60html>
-    &#60head>
-    &#60title>Mi primer documento HTML&#60/title>
-    &#60/head>
+    <div class="grid-item">
+        <code>&#60parrafo&#62 Contenido de texto con 	&#60importante&#62algunas palabras&#60/importante&#62 resaltadas de forma especial. &#60/parrafo&#62;</code>
         
-    &#60body>
-    &#60p>El lenguaje HTML es &#60b>tan sencillo&#60/b> que
-    prácticamente se entiende sin estudiar el significado
-    de sus etiquetas principales.&#60/p>
-    &#60/body>
+        <p>El principio de un párrafo se indica mediante la palabra &#60parrafo&#62 y el final de un párrafo se indica mediante la palabra &#60/parrafo&#62. De la misma manera, para enfatizar ciertas palabras del texto, se encierran entre &#60importante&#62 e &#60/importante&#62. El proceso de indicar las diferentes partes que componen la información se denomina marcar (<i>markup</i> en inglés). Cada una de las palabras que se emplean para marcar el inicio y el final de una sección se denominan etiquetas.</p>
         
-    &#60/html>
-    </pre>
-    </code>
+        <p>Aunque existen algunas excepciones, en general las etiquetas se indican por pares y se forman de la siguiente manera:</p>
+        
+        <p>Etiqueta de apertura: carácter &#60, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter &#62 Etiqueta de cierre: carácter &#60, seguido del carácter /, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter &#62.</p>
 
-    <p>Para probar este primer ejemplo, se ha de hacer lo siguiente:</p>
-    <dl>
-        <dd>Abre un editor de archivos de texto y crea un archivo nuevo</dd>
-        <br>
-        <dd>Copia el código HTML mostrado anteriormente y ponlo tal cual en el archivo que has creado</dd>
-        <br>
-        <dd>Guarda el archivo con el nombre que quieras, pero con la extensión html</dd>
-        <br>
-        <dd>Llama el fichero desde un navegador de internet (no es necesario llevarlo a un servidor).</dd>
-    </dl>
+        <p>Así, la estructura típica de las etiquetas HTML es:</p>
+
+        <code>&#60nombre_etiqueta> ... &#60/nombre_etiqueta></code>
+        
+        <p>HTML es un lenguaje de etiquetas (también llamado lenguaje de marcas) y las páginas web habituales están formadas por cientos o miles de pares de etiquetas. De hecho, las letras "ML" de la sigla HTML significan <i>markup language</i>, que es como se denominan en inglés a los lenguajes de marcas. Además de HTML, existen muchos otros lenguajes de etiquetas como XML, SGML, DocBook y MathML.</p>
+        
+        <p>La principal ventaja de los lenguajes de etiquetas es que son muy sencillos de leer y escribir por parte de las personas y de los sistemas electrónicos. La principal desventaja es que pueden aumentar mucho el tamaño del documento, por lo que en general se utilizan etiquetas con nombres muy cortos.</p>
+    </div>
+
+
+    <h2 class="grid-item">2.2. El primer documento HTML</h2>
+    
+    <div class="grid-item">
+        <p>Las páginas HTML se dividen en dos partes: la cabecera y el cuerpo. La cabecera incluye información sobre la propia página, como por ejemplo su título y su idioma, que no se visualiza. El cuerpo de la página incluye todos sus contenidos, como párrafos de texto e imágenes.</p>
+
+        <img src="data:image/png;base64,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">
+        
+        <p>El cuerpo (llamado <i>body</i> en inglés) contiene todo lo que el usuario ve en su pantalla y la cabecera (llamada <i>head</i> en inglés) contiene todo lo que no se ve (con la única excepción del título de la página, que los navegadores muestran como título de sus ventanas).</p>
+        
+        <p>A continuación se muestra el código HTML de una página web muy sencilla:</p>
+
+        <code>
+        <pre>
+        &#60html>
+        &#60head>
+        &#60title>Mi primer documento HTML&#60/title>
+        &#60/head>
+            
+        &#60body>
+        &#60p>El lenguaje HTML es &#60b>tan sencillo&#60/b> que
+        prácticamente se entiende sin estudiar el significado
+        de sus etiquetas principales.&#60/p>
+        &#60/body>
+            
+        &#60/html>
+        </pre>
+        </code>
+
+        <p>Para probar este primer ejemplo, se ha de hacer lo siguiente:</p>
+        <dl>
+            <dd>Abre un editor de archivos de texto y crea un archivo nuevo</dd>
+            <br>
+            <dd>Copia el código HTML mostrado anteriormente y ponlo tal cual en el archivo que has creado</dd>
+            <br>
+            <dd>Guarda el archivo con el nombre que quieras, pero con la extensión html</dd>
+            <br>
+            <dd>Llama el fichero desde un navegador de internet (no es necesario llevarlo a un servidor).</dd>
+        </dl>
+    </div>
+</div>
+
 
     <h1>3. Algunas consideraciones sobre como lograr un sitio web atractivo</h1>
     
-    <p>Si tus estadísticas están cayendo y cada vez son más las personas que no regresan a tu sitio, es obvio que existe algo que no funciona. Desarrollar un sitio atractivo que capte una y otra vez a los lectores no es una tarea sencilla. Las causas de la mala aceptación pueden ser muchas, lo importante es analizar el sitio objetivamente y valorar qué factores están incidiendo en la percepción de los visitantes:</p>
+    <div class="grid-item" id="bloque_final">
+        <p>Si tus estadísticas están cayendo y cada vez son más las personas que no regresan a tu sitio, es obvio que existe algo que no funciona. Desarrollar un sitio atractivo que capte una y otra vez a los lectores no es una tarea sencilla. Las causas de la mala aceptación pueden ser muchas, lo importante es analizar el sitio objetivamente y valorar qué factores están incidiendo en la percepción de los visitantes:</p>
 
-    <ol>
-        <li>La saturación visual de textos e imágenes. Es esencial que el diseño del sitio web posea una estructura ordenada de forma que no presente una imagen caótica. Se ha comprobado que los sitios particularmente desorganizados provocan estrés en los visitantes por lo que, probablemente, estos no querrán regresar. Cuando se trata de diseño, recuerda que <b>menos</b> es <b>más</b>.</li>
-        <br>
-        <li>Una navegación confusa. Los usuarios de internet suelen premiar la simplicidad. Y el mejor ejemplo de ello es Apple. Si tu sitio web cuenta con menús extensos y con múltiples enlaces, esto provoca la sensación de desorden y al visitante le será difícil moverse dentro del sitio web y comprender su organización. Recuerda además, que la organización da sensación de control y seguridad por lo que tus visitantes querrán volver.</li>
-        <br>
-        <li>Incompatibilidad con navegadores y dispositivos móviles. Aunque no seas un programador experto, debes asegurarte de que tu sitio web tenga una visibilidad aceptable en los principales navegadores que se usan en la actualidad así como que posea una versión para los teléfonos inteligentes, tabletas y lectores de libros. De esta forma no te estarás cerrando a ninguna posibilidad. Debes recordar que a veces los navegadores producen superposiciones de textos e imágenes o provocan que el diseño se corra obligando a realizar desplazamientos muy largos. Por ende, lo mínimo que puedes hacer es revisar la funcionalidad de tu sitio web en los diferentes navegadores y dispositivos.</li>
-        <br>
-        <li>Publicidad excesiva. Cuando los sitios web están tan llenos de publicidad que cuesta encontrar el contenido y cuando se usan ventanas <i>pop up</i> que molestan al visitante, es muy probable que este no vuelva. Por supuesto, la solución no está en eliminar la publicidad sino en insertarla armónicamente con el diseño web.</li>
-        <br>
-        <li>Lentitud al cargar los contenidos. Con la inmediatez de internet, no hay nada más exasperante que un sitio web que se demore en cargar. Esto puede suceder por varios motivos: un mal proveedor de alojamiento o un sitio web con imágenes demasiado pesadas. De una forma u otra, ten en cuenta que 10 segundos ya se considera un sitio lento en cargar. En <a href="https://www.pingdom.com/">Pingdom</a> podrás verificar cuánto tarda un sitio web.</li>
-        <br>
-        <li>Usar plantillas populares. Existen abundantes plantillas populares, muchas de ellas las ofrecen las mismas plataformas como Blogger y Wordpress. El uso de ellas puede ser contraproducente ya que anulan toda la identidad del sitio web. Recuerda que en un mundo tan amplio como internet, diferenciarse es esencial.</li>
-        <br>
-        <li>Contenido poco original. En la red ya existen cientos de sitios que copian los contenidos de otros. En la misma medida en que tus visitantes comiencen a percatarse de que copias siempre de los mismos sitios web, optarán por visitar directamente a estos.</li>
-        <br>
-        <li>Ausencia de una temática principal. Independientemente del número de tópicos que se pueden abordar, es importante que el visitante aprecie una consistencia temática. De esta forma se puede crear una identidad que te diferencie del resto de los sitios de la web.</li>
-    </ol>
+        <ol>
+            <li>La saturación visual de textos e imágenes. Es esencial que el diseño del sitio web posea una estructura ordenada de forma que no presente una imagen caótica. Se ha comprobado que los sitios particularmente desorganizados provocan estrés en los visitantes por lo que, probablemente, estos no querrán regresar. Cuando se trata de diseño, recuerda que <b>menos</b> es <b>más</b>.</li>
+            <br>
+            <li>Una navegación confusa. Los usuarios de internet suelen premiar la simplicidad. Y el mejor ejemplo de ello es Apple. Si tu sitio web cuenta con menús extensos y con múltiples enlaces, esto provoca la sensación de desorden y al visitante le será difícil moverse dentro del sitio web y comprender su organización. Recuerda además, que la organización da sensación de control y seguridad por lo que tus visitantes querrán volver.</li>
+            <br>
+            <li>Incompatibilidad con navegadores y dispositivos móviles. Aunque no seas un programador experto, debes asegurarte de que tu sitio web tenga una visibilidad aceptable en los principales navegadores que se usan en la actualidad así como que posea una versión para los teléfonos inteligentes, tabletas y lectores de libros. De esta forma no te estarás cerrando a ninguna posibilidad. Debes recordar que a veces los navegadores producen superposiciones de textos e imágenes o provocan que el diseño se corra obligando a realizar desplazamientos muy largos. Por ende, lo mínimo que puedes hacer es revisar la funcionalidad de tu sitio web en los diferentes navegadores y dispositivos.</li>
+            <br>
+            <li>Publicidad excesiva. Cuando los sitios web están tan llenos de publicidad que cuesta encontrar el contenido y cuando se usan ventanas <i>pop up</i> que molestan al visitante, es muy probable que este no vuelva. Por supuesto, la solución no está en eliminar la publicidad sino en insertarla armónicamente con el diseño web.</li>
+            <br>
+            <li>Lentitud al cargar los contenidos. Con la inmediatez de internet, no hay nada más exasperante que un sitio web que se demore en cargar. Esto puede suceder por varios motivos: un mal proveedor de alojamiento o un sitio web con imágenes demasiado pesadas. De una forma u otra, ten en cuenta que 10 segundos ya se considera un sitio lento en cargar. En <a href="https://www.pingdom.com/">Pingdom</a> podrás verificar cuánto tarda un sitio web.</li>
+            <br>
+            <li>Usar plantillas populares. Existen abundantes plantillas populares, muchas de ellas las ofrecen las mismas plataformas como Blogger y Wordpress. El uso de ellas puede ser contraproducente ya que anulan toda la identidad del sitio web. Recuerda que en un mundo tan amplio como internet, diferenciarse es esencial.</li>
+            <br>
+            <li>Contenido poco original. En la red ya existen cientos de sitios que copian los contenidos de otros. En la misma medida en que tus visitantes comiencen a percatarse de que copias siempre de los mismos sitios web, optarán por visitar directamente a estos.</li>
+            <br>
+            <li>Ausencia de una temática principal. Independientemente del número de tópicos que se pueden abordar, es importante que el visitante aprecie una consistencia temática. De esta forma se puede crear una identidad que te diferencie del resto de los sitios de la web.</li>
+        </ol>
+    </div>
 
 </body>
 </html>
