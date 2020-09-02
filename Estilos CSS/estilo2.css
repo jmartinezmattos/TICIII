@@ -18,7 +18,7 @@ h1, h2{
 }
 
 h2{
-    border: 3px dotted green;
+    border: 3px dotted wheat;
 }
 
 .item{
@@ -46,5 +46,5 @@ h2{
     overflow: hidden;
     column-count: 3;
     column-gap: 20px;
-    column-rule: dotted 4px green;
+    column-rule: dotted 4px wheat;
 }
